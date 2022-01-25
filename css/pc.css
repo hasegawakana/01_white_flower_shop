@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body {
+  font-family: "Myriad Pro","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "MS PGothic", sans-serif;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=pc.css.map */
