@@ -1,0 +1,15 @@
+.p-contact__disc {
+  @include heddingDisc;
+}
+
+.p-contact__btn {
+  button {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #A0A0A0;
+  }
+
+  i {
+    padding-right: 1rem;
+  }
+}

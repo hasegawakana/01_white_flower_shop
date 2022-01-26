@@ -1,0 +1,27 @@
+.c-card__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.c-card__flex__nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-right: -15px;
+}
+
+.c-adress__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-right: -15px;
+
+  dt {
+    flex-basis: 25%;
+  }
+
+  dd {
+    flex-basis: 70%;
+  }
+}

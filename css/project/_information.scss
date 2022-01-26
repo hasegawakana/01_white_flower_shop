@@ -1,0 +1,22 @@
+.p-information__disc {
+  @include heddingDisc;
+}
+
+.p-information__img,
+.p-information__adress {
+  width: calc(100% / 2);
+  padding-right: 15px;
+  font-size: 1.6rem;
+}
+
+.p-information__adress {
+  padding: 2rem;
+  text-align: left;
+
+  dd {
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    border-left: 1px solid #333;
+    margin-bottom: 1rem;
+  }
+}

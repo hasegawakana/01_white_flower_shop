@@ -1,2 +1,323 @@
-@import url(/Users/kana/hobby/01_white_flower_shop/css/pc.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/* clearfix------------------------------- */
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: myriad-pro, sans-serif;
+}
+
+.l-header {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 767px) {
+  .l-header {
+    padding: .5rem 0;
+  }
+}
+
+.l-content {
+  padding-top: 40px;
+  width: 100%;
+}
+
+.l-footer {
+  text-align: center;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .l-footer {
+    padding: .5rem 0;
+  }
+}
+
+.l-main {
+  max-width: 1600px;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 5%;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .l-main {
+    width: 100%;
+    float: none;
+  }
+}
+
+h1 {
+  font-size: 120px;
+  color: #fff;
+  font-family: myriad-pro, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+h1 span {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  margin-top: 80px;
+  position: relative;
+  font-family: poppins, sans-serif;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: -24px;
+  width: 35px;
+  height: 1px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #333;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 2;
+}
+
+.c-card__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-card__flex__nowrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: -15px;
+}
+
+.c-adress__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-right: -15px;
+}
+
+.c-adress__flex dt {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.c-adress__flex dd {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+button {
+  padding: 2% 10%;
+  background: transparent;
+  border: none;
+}
+
+.l-header {
+  background-image: url(../images/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 620px;
+  position: relative;
+}
+
+.p-concept__disc {
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-top: 57px;
+}
+
+.p-work__card {
+  width: calc(50% - (120px / 2));
+  text-align: left;
+}
+
+.p-work__card__text {
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-bottom: 80px;
+}
+
+.p-work__card__text:nth-child(even) {
+  margin-bottom: 80px;
+}
+
+.p-work__disc {
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-top: 57px;
+}
+
+.c-card__flex__02 {
+  margin-top: 120px;
+}
+
+.c-card__flex__03 {
+  margin-top: -300px;
+}
+
+.p-florist__disc {
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-top: 57px;
+}
+
+.p-florist__card {
+  width: calc(100% / 3);
+  padding-right: 15px;
+  text-align: left;
+}
+
+.p-florist__card__text {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.p-information__disc {
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-top: 57px;
+}
+
+.p-information__img,
+.p-information__adress {
+  width: calc(100% / 2);
+  padding-right: 15px;
+  font-size: 1.6rem;
+}
+
+.p-information__adress {
+  padding: 2rem;
+  text-align: left;
+}
+
+.p-information__adress dd {
+  padding: 1rem 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-left: 1px solid #333;
+  margin-bottom: 1rem;
+}
+
+.p-contact__disc {
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-top: 57px;
+}
+
+.p-contact__btn button {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #A0A0A0;
+}
+
+.p-contact__btn i {
+  padding-right: 1rem;
+}
+
+.l-footer {
+  background-image: url(../images/contact_us.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+}
+
+.copy {
+  text-align: center;
+  line-height: 3;
+}
 /*# sourceMappingURL=style.css.map */

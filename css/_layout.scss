@@ -1,0 +1,37 @@
+.l-header {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+
+  @media screen and (max-width: 767px) {
+    padding: .5rem 0;
+  }
+}
+
+.l-content {
+  padding-top: 40px;
+  width: 100%;
+}
+
+.l-footer {
+  text-align: center;
+  padding: 2rem;
+
+  @media screen and (max-width: 767px) {
+    padding: .5rem 0;
+  }
+}
+
+.l-main {
+  max-width: 1600px;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 5%;
+  text-align: center;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    float: none;
+  }
+}

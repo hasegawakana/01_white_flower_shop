@@ -1,0 +1,29 @@
+.p-work__card {
+  width: calc(50% - (120px / 2));
+  text-align: left;
+
+  &__text {
+    width: 100%;
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-bottom: 80px;
+
+    &:nth-child(even) {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+.p-work__disc {
+  @include heddingDisc;
+}
+
+.c-card__flex {
+  &__02 {
+    margin-top: 120px;
+  }
+
+  &__03 {
+    margin-top: -300px;
+  }
+}

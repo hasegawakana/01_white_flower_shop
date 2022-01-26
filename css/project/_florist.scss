@@ -1,0 +1,14 @@
+.p-florist__disc {
+  @include heddingDisc;
+}
+
+.p-florist__card {
+  width: calc(100% / 3);
+  padding-right: 15px;
+  text-align: left;
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 2;
+  }
+}
