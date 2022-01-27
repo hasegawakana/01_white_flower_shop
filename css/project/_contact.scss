@@ -4,12 +4,39 @@
 
 .p-contact__btn {
   button {
-    position: relative;
+    width: 360px;
+    height: 80px;
     background-color: #fff;
     border: 1px solid #A0A0A0;
-  }
+    position: relative;
+    font-size: 2.0rem;
+    padding-left: 20px;
+    box-sizing: border-box;
 
-  i {
-    padding-right: 1rem;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 2px;
+    }
+
+    &::before {
+      top: 30px;
+      left: 85px;
+      width: 30px;
+      height: 20px;
+      border: 1px solid #2b2b2b;
+    }
+
+    &::after {
+      top: 21px;
+      left: 90px;
+      width: 20px;
+      height: 20px;
+      border-right: 1px solid #2b2b2b;
+      border-bottom: 1px solid #2b2b2b;
+      transform: rotate(45deg);
+    }
   }
 }

@@ -4,4 +4,9 @@ html {
 
 body {
   font-family: myriad-pro, sans-serif;
+  @include letterSpacing(.8px);
+}
+
+section {
+  padding-top: 80px;
 }

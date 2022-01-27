@@ -1,5 +1,9 @@
 button {
-  padding: 2% 10%;
   background: transparent;
   border: none;
+  outline: none;
+  appearance: none;
+  &:hover {
+    cursor: pointer;
+  }
 }

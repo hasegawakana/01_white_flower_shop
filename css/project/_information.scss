@@ -1,22 +1,32 @@
+.information {
+  padding-bottom: 80px;
+}
+
 .p-information__disc {
   @include heddingDisc;
 }
 
-.p-information__img,
-.p-information__adress {
-  width: calc(100% / 2);
-  padding-right: 15px;
-  font-size: 1.6rem;
+.p-information__img {
+  width: 50%;
 }
 
 .p-information__adress {
-  padding: 2rem;
+  width: 45%;
+  font-size: 1.6rem;
+  box-sizing: border-box;
   text-align: left;
+  @include letterSpacing;
+  line-height: 2;
+
+  dt {
+    background: gray;
+  }
 
   dd {
     padding: 1rem 2rem;
     box-sizing: border-box;
     border-left: 1px solid #333;
     margin-bottom: 1rem;
+    background: tomato;
   }
 }

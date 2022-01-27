@@ -7,128 +7,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shiro | White flower shop</title>
   <link rel="stylesheet" href="https://use.typekit.net/keg7hsy.css">
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
 
-  <body>
+  <body id="body">
     <div class="wrapper">
-      <header class="l-header">
-        <h1>Shiro<br><span>- White flower shop -</span></h1>
-        <!--プルダウンメニュー-->
-        <!-- <nav>
-          <ul>
-            <li><a href="#">項目1</a></li>
-            <li class="sub2"><a href="#">項目2</a>
-              <ul> -->
-        <!--この中がプルダウン-->
-        <!-- <li><a href="#">項目2-1</a></li>
-                <li><a href="#">項目2-2</a></li>
-                <li><a href="#">項目2-3</a></li>
+      <header class="l-header p-header">
+        <div class="p-header__wrapper">
+          <h1 class="p-header__title">Shiro</h1>
+          <p class="p-header__title__sub">White flower shop</p>
+        </div>
+        <div class="l-header__nav fixd">
+          <div class="l-wrapper p-header__nav">
+            <p class="p-header__nav__text">Shiro</p>
+            <button class="c-hamburger__menu__btn close" id="c-hamburger__menu__btn">
+              <span class="c-hamburger__menu__btn--top"></span>
+              <span class="c-hamburger__menu__btn--middle"></span>
+              <span class="c-hamburger__menu__btn--bottom"></span>
+            </button>
+
+            <nav class="c-hamburger__menu close" id="c-hamburger__menu" role="navigation">
+              <ul class="p-nav__ul__wrap">
+                <li class="p-nav__ul__item"><a href="#concept">Concept</a></li>
+                <li class="p-nav__ul__item"><a href="#work">Work</a></li>
+                <li class="p-nav__ul__item"><a href="#florist">Florist</a></li>
+                <li class="p-nav__ul__item"><a href="#information">Shop information</a></li>
               </ul>
-            </li>
-          </ul>
-        </nav> -->
+            </nav>
+          </div>
+        </div>
       </header>
       <main class="l-main">
         <article>
           <section class="concept" id="concept">
-            <h2>Concept</h2>
-            <p class="p-concept__disc">私たちShiroは、白いお花だけを取り扱うフラワーショップです。
-              <br>色とりどりの花束も素敵だけれど、洗練された「白」の美しさを感じてほしい。<br>「白」に対する愛から生まれた静寂な時間が流れる店へ、ぜひお越しください。</p>
-            <div class="l-content">
-              <p><img src="images/concept.png" alt="#"></p>
-            </div>
+            <div class="l-wrapper">
+              <h2>Concept</h2>
+              <p class="p-concept__disc">私たちShiroは、白いお花だけを取り扱うフラワーショップです。
+                <br>色とりどりの花束も素敵だけれど、洗練された「白」の美しさを感じてほしい。<br>「白」に対する愛から生まれた静寂な時間が流れる店へ、ぜひお越しください。</p>
+              <div class="l-content">
+                <p><img src="images/concept.png" alt="#"></p>
+              </div>
+            </div><!-- /.l-wrapper -->
           </section>
-
           <section class="work" id="work">
-            <h2>Work</h2>
-            <p class="p-work__disc">オーダーメイドでのブーケ・アレンジメントのデザインのほか、<br>ウェディングやイベントの装花なども行なっています。<br>一人一人にあったご提案をさせていただきます。
-            </p>
-            <div class="l-content c-card__flex">
-              <div class="p-work__card">
-                <p><img src="images/work_gift.png" alt="#" class="p-work__card__img"></p>
-                <h3>Gift</h3>
-                <p class="p-work__card__text">花束をお送りしたいお相手、伝えたいお気持ちに合わせたプレゼント用花束のアレンジメントをさせていただきます。花言葉などの豆知識もお伝えします。</p>
+            <div class="l-wrapper">
+              <h2>Work</h2>
+              <p class="p-work__disc">
+                オーダーメイドでのブーケ・アレンジメントのデザインのほか、<br>ウェディングやイベントの装花なども行なっています。<br>一人一人にあったご提案をさせていただきます。
+              </p>
+              <div class="l-content c-card__flex">
+                <div class="p-work__card">
+                  <p><img src="images/work_gift.png" alt="#" class="p-work__card__img"></p>
+                  <h3>Gift</h3>
+                  <p class="p-work__card__text">花束をお送りしたいお相手、伝えたいお気持ちに合わせたプレゼント用花束のアレンジメントをさせていただきます。花言葉などの豆知識もお伝えします。
+                  </p>
+                </div>
+                <div class="p-work__card c-card__flex__02">
+                  <p><img src="images/work_decoretion.png" alt="#" class="p-work__card__img"></p>
+                  <h3>Decoration</h3>
+                  <p class="p-work__card__text">お写真を彩るお花を一輪から販売。一定期間のご契約で定期的にご自宅へ配送させていただくことも可能です。</p>
+                </div>
+                <div class="p-work__card c-card__flex__03">
+                  <p><img src="images/work_wedding.png" alt="#" class="p-work__card__img"></p>
+                  <h3>Wedding</h3>
+                  <p class="p-work__card__text">ウエディングドレスに合わせたブーケや式場の雰囲気に合う装花をご提案。お打ち合わせの流れや回数、費用などにつきましてはお問い合わせください。
+                  </p>
+                </div>
+                <div class="p-work__card">
+                  <p><img src="images/work_for_yourself.png" alt="#" class="p-work__card__img"></p>
+                  <h3>For yourself</h3>
+                  <p class="p-work__card__text">
+                    お部屋の雰囲気やライフスタイルをお聞きしてご自宅用の花束をご提案し、少しでも長く咲かせるコツもお教えします。花束に合った花瓶をご提案することも可能です。</p>
+                </div>
               </div>
-              <div class="p-work__card c-card__flex__02">
-                <p><img src="images/work_decoretion.png" alt="#" class="p-work__card__img"></p>
-                <h3>Decoration</h3>
-                <p class="p-work__card__text">お写真を彩るお花を一輪から販売。一定期間のご契約で定期的にご自宅へ配送させていただくことも可能です。</p>
-              </div>
-              <div class="p-work__card c-card__flex__03">
-                <p><img src="images/work_wedding.png" alt="#" class="p-work__card__img"></p>
-                <h3>Wedding</h3>
-                <p class="p-work__card__text">ウエディングドレスに合わせたブーケや式場の雰囲気に合う装花をご提案。お打ち合わせの流れや回数、費用などにつきましてはお問い合わせください。</p>
-              </div>
-              <div class="p-work__card">
-                <p><img src="images/work_for_yourself.png" alt="#" class="p-work__card__img"></p>
-                <h3>For yourself</h3>
-                <p class="p-work__card__text">
-                  お部屋の雰囲気やライフスタイルをお聞きしてご自宅用の花束をご提案し、少しでも長く咲かせるコツもお教えします。花束に合った花瓶をご提案することも可能です。</p>
-              </div>
-            </div>
+            </div><!-- /.l-wrapper -->
           </section>
 
 
           <section class="florist" id="florist">
-            <h2>Florist</h2>
-            <p class="p-florist__disc">Shiro専属のフローリストたちをご紹介。<br>得意の分野であなたのオーダーを最大限に叶えます。</p>
-            <div class="l-content c-card__flex__nowrap">
-              <div class="p-florist__card">
-                <p><img src="images/florist_shiyu.png" alt="#" class="p-florist__img"></p>
-                <h3>For yourself</h3>
-                <p class="p-florist__card__text">
-                  お部屋の雰囲気やライフスタイルをお聞きしてご自宅用の花束をご提案し、少しでも長く咲かせるコツもお教えします。花束に合った花瓶をご提案することも可能です。</p>
+            <div class="l-wrapper">
+              <h2>Florist</h2>
+              <p class="p-florist__disc">Shiro専属のフローリストたちをご紹介。<br>得意の分野であなたのオーダーを最大限に叶えます。</p>
+              <div class="l-content c-card__grid">
+                <div class="p-florist__card">
+                  <p><img src="images/florist_shiyu.png" alt="#" class="p-florist__img"></p>
+                  <h3>For yourself</h3>
+                  <p class="p-florist__card__text">
+                    お部屋の雰囲気やライフスタイルをお聞きしてご自宅用の花束をご提案し、少しでも長く咲かせるコツもお教えします。花束に合った花瓶をご提案することも可能です。</p>
+                </div>
+                <div class="p-florist__card">
+                  <p><img src="images/florist_mao.png" alt="#" class="p-florist__img"></p>
+                  <h3>Mao</h3>
+                  <p class="p-florist__card__text">花の魅力に惹かれ、空間デザインの世界からフローリストの道を歩む。主に結婚式やイベントで使用するお花のディレクション担当。</p>
+                </div>
+                <div class="p-florist__card">
+                  <p><img src="images/florist_omichan.png" alt="#" class="p-florist__img"></p>
+                  <h3>Omichan</h3>
+                  <p class="p-florist__card__text">フローリスト兼ガーデナーという特殊な経歴をもつ。豊富な知識と技術でお客様のオーダーを叶える。</p>
+                </div>
               </div>
-              <div class="p-florist__card">
-                <p><img src="images/florist_mao.png" alt="#" class="p-florist__img"></p>
-                <h3>Mao</h3>
-                <p class="p-florist__card__text">花の魅力に惹かれ、空間デザインの世界からフローリストの道を歩む。主に結婚式やイベントで使用するお花のディレクション担当。</p>
-              </div>
-              <div class="p-florist__card">
-                <p><img src="images/florist_omichan.png" alt="#" class="p-florist__img"></p>
-                <h3>Omichan</h3>
-                <p class="p-florist__card__text">フローリスト兼ガーデナーという特殊な経歴をもつ。豊富な知識と技術でお客様のオーダーを叶える。</p>
-              </div>
-            </div>
+            </div><!-- /.l-wrapper -->
           </section>
 
           <section class="information" id="information">
-            <h2>Shop information</h2>
-            <p class="p-information__disc">Shiroの店舗情報をご紹介します。</p>
-            <div class="l-content c-card__flex__nowrap">
-              <p class="p-information__img"><img src="images/shop_information.png" alt="#"></p>
-              <dl class="p-information__adress c-adress__flex">
-                <dt>住所</dt>
-                <dd>〒810-0001<br>福岡県福岡市中央区天神0-0-0</dd>
-                <dt>電話番号</dt>
-                <dd>0120-000-000</dd>
-                <dt>営業時間</dt>
-                <dd>11:00-20:30<br>（定休日：水曜日）</dd>
-                <dt>アクセス</dt>
-                <dd>天神駅12a出口から徒歩6分<br>東京駅8b出口から徒歩12分</dd>
-              </dl>
-            </div>
+            <div class="l-wrapper">
+              <h2>Shop information</h2>
+              <p class="p-information__disc">Shiroの店舗情報をご紹介します。</p>
+              <div class="l-content c-card__flex__nowrap">
+                <p class="p-information__img"><img src="images/shop_information.png" alt="#"></p>
+                <dl class="p-information__adress c-adress__flex">
+                  <dt>住所</dt>
+                  <dd>〒810-0001<br>福岡県福岡市中央区天神0-0-0</dd>
+                  <dt>電話番号</dt>
+                  <dd>0120-000-000</dd>
+                  <dt>営業時間</dt>
+                  <dd>11:00-20:30<br>（定休日：水曜日）</dd>
+                  <dt>アクセス</dt>
+                  <dd>天神駅12a出口から徒歩6分<br>東京駅8b出口から徒歩12分</dd>
+                </dl>
+              </div>
+            </div><!-- /.l-wrapper -->
           </section>
         </article>
       </main>
-      <footer class="l-footer">
+      <footer class="l-footer p-footer">
         <h2>Contact us</h2>
         <p class="p-contact__disc">イベントや結婚式でご利用する装花のご相談や、<br>フラワーアレンジメントのご予約などはこちらからお問い合わせください。</p>
         <div class="l-content">
           <div class="p-contact__btn">
-            <button><i class="far fa-envelope fa-lg"></i><span>お問い合わせ</span></button>
+            <button>お問い合わせ</button>
           </div>
         </div>
       </footer>
       <p class="copy"> &copy; Shiro All Rights Reserved.</p>
     </div>
     <!--/wrapper-->
+    <script src="js/nav.js"></script>
   </body>
 
 </html>
