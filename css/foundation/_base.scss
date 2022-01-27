@@ -10,3 +10,11 @@ body {
 section {
   padding-top: 80px;
 }
+
+h2 {
+  @include hedding2;
+}
+
+h3 {
+  @include hedding3;
+}
