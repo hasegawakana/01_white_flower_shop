@@ -2,10 +2,6 @@
   width: 100%;
   text-align: center;
   padding: 2rem 0;
-
-  @media screen and (max-width: 767px) {
-    padding: .5rem 0;
-  }
 }
 
 .l-wrapper {
@@ -20,18 +16,9 @@
 .l-footer {
   text-align: center;
   padding: 2rem;
-
-  @media screen and (max-width: 767px) {
-    padding: .5rem 0;
-  }
 }
 
 .l-main {
   text-align: center;
   box-sizing: border-box;
-
-  @media screen and (max-width: 767px) {
-    width: 100%;
-    float: none;
-  }
 }

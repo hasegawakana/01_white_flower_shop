@@ -29,6 +29,10 @@
   font-size: 1.6rem;
   line-height: 2;
   margin-top: 57px;
+
+  @include mq-up('md') {
+    text-align: left;
+  }
 }
 
 @mixin topBottomLeftRight {
@@ -46,4 +50,34 @@
 
 @mixin letterSpacing($letter-spacing: 1.5px) {
   letter-spacing: $letter-spacing;
+}
+
+// $sizes: xl,
+// lg,
+// md,
+// sm,
+// xs;
+
+$breakpoint-up: ( // 'xs': 'screen and (max-width: 321px)',
+  'sm': 'screen and (max-width: 376px)',
+  'md': 'screen and (max-width: 501px)',
+  'lg': 'screen and (max-width: 768px)',
+  // 'xl': 'screen and (max-width: 1201px)',
+) !default;
+
+@mixin mq-up($breakpoint: md) {
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin sectionPadding {
+  padding-right: 5rem;
+  padding-left: 5rem;
+  box-sizing: border-box;
+
+  @include mq-up('md') {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
 }

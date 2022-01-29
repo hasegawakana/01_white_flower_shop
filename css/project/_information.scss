@@ -1,4 +1,5 @@
 .information {
+  @include sectionPadding;
   padding-bottom: 80px;
 }
 
@@ -18,15 +19,27 @@
   @include letterSpacing;
   line-height: 2;
 
-  dt {
-    background: gray;
-  }
-
   dd {
     padding: 1rem 2rem;
     box-sizing: border-box;
     border-left: 1px solid #333;
     margin-bottom: 1rem;
-    background: tomato;
+  }
+}
+
+@include mq-up('lg') {
+  .c-card__flex__nowrap {
+    display: block;
+  }
+
+  .p-information__img {
+    margin: 0 auto;
+    width: auto;
+    margin-bottom: 5%;
+  }
+
+  .p-information__adress {
+    margin: 0 auto;
+    width: auto;
   }
 }

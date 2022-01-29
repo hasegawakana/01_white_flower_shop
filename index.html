@@ -8,6 +8,7 @@
   <title>Shiro | White flower shop</title>
   <link rel="stylesheet" href="https://use.typekit.net/keg7hsy.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
           <h1 class="p-header__title">Shiro</h1>
           <p class="p-header__title__sub">White flower shop</p>
         </div>
-        <div class="l-header__nav fixd">
+        <div class="l-header__nav is-bgColor" id="js-header">
           <div class="l-wrapper p-header__nav">
             <p class="p-header__nav__text">Shiro</p>
             <button class="c-hamburger__menu__btn close" id="c-hamburger__menu__btn">
@@ -47,7 +48,7 @@
               <p class="p-concept__disc">私たちShiroは、白いお花だけを取り扱うフラワーショップです。
                 <br>色とりどりの花束も素敵だけれど、洗練された「白」の美しさを感じてほしい。<br>「白」に対する愛から生まれた静寂な時間が流れる店へ、ぜひお越しください。</p>
               <div class="l-content">
-                <p><img src="images/concept.png" alt="#"></p>
+                <p><img src="images/concept.png" alt="#" class="p-concept__img"></p>
               </div>
             </div><!-- /.l-wrapper -->
           </section>
@@ -57,31 +58,33 @@
               <p class="p-work__disc">
                 オーダーメイドでのブーケ・アレンジメントのデザインのほか、<br>ウェディングやイベントの装花なども行なっています。<br>一人一人にあったご提案をさせていただきます。
               </p>
-              <div class="l-content c-card__flex">
+              <div class="p-card__wrapper">
+              <div class="l-content p-card__flex">
                 <div class="p-work__card">
-                  <p><img src="images/work_gift.png" alt="#" class="p-work__card__img"></p>
+                  <p class="p-work__card__img__wrap"><img src="images/work_gift.png" alt="#" class="p-work__card__img"></p>
                   <h3>Gift</h3>
                   <p class="p-work__card__text">花束をお送りしたいお相手、伝えたいお気持ちに合わせたプレゼント用花束のアレンジメントをさせていただきます。花言葉などの豆知識もお伝えします。
                   </p>
                 </div>
-                <div class="p-work__card c-card__flex__02">
-                  <p><img src="images/work_decoretion.png" alt="#" class="p-work__card__img"></p>
+                <div class="p-work__card p-work__card__02">
+                  <p class="p-work__card__img__wrap"><img src="images/work_decoretion.png" alt="#" class="p-work__card__img"></p>
                   <h3>Decoration</h3>
                   <p class="p-work__card__text">お写真を彩るお花を一輪から販売。一定期間のご契約で定期的にご自宅へ配送させていただくことも可能です。</p>
                 </div>
-                <div class="p-work__card c-card__flex__03">
-                  <p><img src="images/work_wedding.png" alt="#" class="p-work__card__img"></p>
+                <div class="p-work__card p-work__card__03">
+                  <p class="p-work__card__img__wrap"><img src="images/work_wedding.png" alt="#" class="p-work__card__img"></p>
                   <h3>Wedding</h3>
                   <p class="p-work__card__text">ウエディングドレスに合わせたブーケや式場の雰囲気に合う装花をご提案。お打ち合わせの流れや回数、費用などにつきましてはお問い合わせください。
                   </p>
                 </div>
                 <div class="p-work__card">
-                  <p><img src="images/work_for_yourself.png" alt="#" class="p-work__card__img"></p>
+                  <p class="p-work__card__img__wrap"><img src="images/work_for_yourself.png" alt="#" class="p-work__card__img"></p>
                   <h3>For yourself</h3>
                   <p class="p-work__card__text">
                     お部屋の雰囲気やライフスタイルをお聞きしてご自宅用の花束をご提案し、少しでも長く咲かせるコツもお教えします。花束に合った花瓶をご提案することも可能です。</p>
                 </div>
               </div>
+            </div>
             </div><!-- /.l-wrapper -->
           </section>
 
@@ -130,18 +133,20 @@
               </div>
             </div><!-- /.l-wrapper -->
           </section>
+          <section class="p-contact">
+            <h2>Contact us</h2>
+            <p class="p-contact__disc">イベントや結婚式でご利用する装花のご相談や、<br>フラワーアレンジメントのご予約などはこちらからお問い合わせください。</p>
+            <div class="l-content">
+              <div class="p-contact__btn">
+                <button>お問い合わせ</button>
+              </div>
+            </div>
+          </section>
         </article>
       </main>
-      <footer class="l-footer p-footer">
-        <h2>Contact us</h2>
-        <p class="p-contact__disc">イベントや結婚式でご利用する装花のご相談や、<br>フラワーアレンジメントのご予約などはこちらからお問い合わせください。</p>
-        <div class="l-content">
-          <div class="p-contact__btn">
-            <button>お問い合わせ</button>
-          </div>
-        </div>
-      </footer>
-      <p class="copy"> &copy; Shiro All Rights Reserved.</p>
+      <footer class="l-footer">
+        <p>&copy; Shiro All Rights Reserved.</p>
+        </footer>
     </div>
     <!--/wrapper-->
     <script src="js/nav.js"></script>

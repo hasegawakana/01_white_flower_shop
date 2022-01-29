@@ -4,28 +4,36 @@
   background-size: cover;
   height: 620px;
   position: relative;
+}
 
-  &__nav {
-    height: 64px;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, .8);
+.l-header__nav {
+  height: 64px;
+  width: 100%;
+  padding: 0 2rem;
+  z-index: 600;
+}
 
-    &.fixd {
-      position: fixed;
-      top: 40px;
-      z-index: 600;
-    }
-  }
+.is-bgColor {
+  color: #fff;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+.is-bgColor--done {
+  position: fixed;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #cbb2b2;
+  box-shadow: 0 2px 4px #cbc7c7;
+  color: #000;
 }
 
 .p-header {
+  color: #fff;
+  font-family: myriad-pro, sans-serif;
   &__wrapper {
     @include topBottomLeftRight;
-    color: #fff;
-    font-family: myriad-pro, sans-serif;
   }
 
   &__title {
@@ -64,6 +72,10 @@
   &__wrap {
     @include topBottomLeftRight;
     width: 50%;
+
+    @include mq-up('lg') {
+      width: 65%;
+    }
   }
 
   &__item {

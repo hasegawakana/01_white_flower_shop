@@ -1,5 +1,9 @@
 html {
   font-size: 62.5%;
+
+  @include mq-up('md') {
+    font-size: 58%;
+  }
 }
 
 body {
@@ -17,4 +21,8 @@ h2 {
 
 h3 {
   @include hedding3;
+}
+
+footer {
+  font-size: 1.3rem;
 }

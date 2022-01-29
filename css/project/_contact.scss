@@ -2,6 +2,14 @@
   @include heddingDisc;
 }
 
+.p-contact {
+  background-image: url(../images/contact_us.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 450px;
+  max-width: none;
+}
+
 .p-contact__btn {
   button {
     width: 360px;
@@ -12,7 +20,6 @@
     font-size: 2.0rem;
     padding-left: 20px;
     box-sizing: border-box;
-
 
     &::before,
     &::after {
@@ -37,6 +44,27 @@
       border-right: 1px solid #2b2b2b;
       border-bottom: 1px solid #2b2b2b;
       transform: rotate(45deg);
+    }
+  }
+}
+
+@include mq-up ('md') {
+  .p-contact {
+    @include sectionPadding;
+    padding-bottom: 5rem;
+  }
+
+  .p-contact__btn {
+    button {
+      max-width: 290px;
+
+      &::before {
+        left: 40px;
+      }
+
+      &::after {
+        left: 45px;
+      }
     }
   }
 }
