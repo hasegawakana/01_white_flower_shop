@@ -1,0 +1,28 @@
+html {
+  font-size: 62.5%;
+
+  @include mq-up('md') {
+    font-size: 58%;
+  }
+}
+
+body {
+  font-family: myriad-pro, sans-serif;
+  @include letterSpacing(.8px);
+}
+
+section {
+  padding-top: 80px;
+}
+
+h2 {
+  @include hedding2;
+}
+
+h3 {
+  @include hedding3;
+}
+
+footer {
+  font-size: 1.3rem;
+}

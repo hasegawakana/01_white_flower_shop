@@ -1,0 +1,45 @@
+.information {
+  @include sectionPadding;
+  padding-bottom: 80px;
+}
+
+.p-information__disc {
+  @include heddingDisc;
+}
+
+.p-information__img {
+  width: 50%;
+}
+
+.p-information__adress {
+  width: 45%;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  text-align: left;
+  @include letterSpacing;
+  line-height: 2;
+
+  dd {
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    border-left: 1px solid #333;
+    margin-bottom: 1rem;
+  }
+}
+
+@include mq-up('lg') {
+  .c-card__flex__nowrap {
+    display: block;
+  }
+
+  .p-information__img {
+    margin: 0 auto;
+    width: auto;
+    margin-bottom: 5%;
+  }
+
+  .p-information__adress {
+    margin: 0 auto;
+    width: auto;
+  }
+}

@@ -1,0 +1,131 @@
+@mixin transition {
+  transition: transform .3s;
+}
+
+.c-hamburger__menu {
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 501;
+  right: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__btn {
+    padding: 1rem 1.5rem;
+    position: absolute;
+    top: 15px;
+    right: 200px;
+    z-index: 502;
+  }
+
+  // &__bg {
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 500;
+  //   background: rgba(0, 0, 0, 0.8);
+  //   width: 100%;
+  //   height: 100%;
+  //   display: none;
+
+  //   &:hover {
+  //     cursor: pointer;
+  //   }
+  // }
+}
+
+.c-hamburger__menu.show {
+  top: 0;
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.c-hamburger__menu__btn {
+  // background: #464646;
+
+  span {
+    display: inline-block;
+    width: 35px;
+    height: 1px;
+    background: #fff;
+  }
+}
+
+.c-hamburger__menu__btn.close {
+  .c-hamburger__menu__btn--top {
+    transform: translateY(1px);
+    @include transition;
+  }
+
+  .c-hamburger__menu__btn--middle {
+    transform: translateY(-3px);
+    @include transition;
+  }
+
+  .c-hamburger__menu__btn--bottom {
+    transform: translateY(-7px) rotate(0deg);
+    @include transition;
+  }
+}
+
+.c-hamburger__menu__btn.show {
+  .c-hamburger__menu__btn--top {
+    @include transition;
+    transform: translateY(3px) rotate(45deg);
+  }
+
+  .c-hamburger__menu__btn--middle {
+    display: none;
+  }
+
+  .c-hamburger__menu__btn--bottom {
+    @include transition;
+    transform: translateY(-12px) rotate(-45deg);
+  }
+}
+
+// top down
+.c-hamburger__menu__btn {
+  width: 60px;
+  height: 64px;
+  @include topBottom;
+  right: 0;
+  z-index: 610;
+}
+
+.c-hamburger__menu.close {
+  top: -100%;
+  animation: toTop .5s;
+}
+
+.c-hamburger__menu.show {
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  animation: toBottom .5s;
+}
+
+@keyframes toBottom {
+  0% {
+    top: -100%;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes toTop {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: -100%;
+    opacity: 0;
+  }
+}

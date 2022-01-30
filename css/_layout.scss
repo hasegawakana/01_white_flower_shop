@@ -1,0 +1,24 @@
+.l-header {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.l-wrapper {
+  @include l-wrapper;
+}
+
+.l-content {
+  width: 100%;
+  padding-top: 40px;
+}
+
+.l-footer {
+  text-align: center;
+  padding: 2rem;
+}
+
+.l-main {
+  text-align: center;
+  box-sizing: border-box;
+}

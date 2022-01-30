@@ -1,0 +1,9 @@
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+  &:hover {
+    cursor: pointer;
+  }
+}

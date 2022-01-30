@@ -1,0 +1,33 @@
+.c-card__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.c-card__flex__nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-adress__flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  dt {
+    flex-basis: 30%;
+  }
+
+  dd {
+    flex-basis: 70%;
+  }
+}
+
+.c-card__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  justify-content: center;
+}
