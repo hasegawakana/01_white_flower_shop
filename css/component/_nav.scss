@@ -7,46 +7,58 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 501;
   right: 0;
+  z-index: 501;
+  opacity: 0;
+  transform: translateY(-100%);
 
   &:hover {
     cursor: pointer;
   }
-
-  &__btn {
-    padding: 1rem 1.5rem;
-    position: absolute;
-    top: 15px;
-    right: 200px;
-    z-index: 502;
-  }
-
-  // &__bg {
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: 500;
-  //   background: rgba(0, 0, 0, 0.8);
-  //   width: 100%;
-  //   height: 100%;
-  //   display: none;
-
-  //   &:hover {
-  //     cursor: pointer;
-  //   }
-  // }
 }
 
 .c-hamburger__menu.show {
-  top: 0;
-  right: 0;
   opacity: 1;
-  visibility: visible;
+  top: 0;
+  animation: toBottom .7s forwards ease;
+}
+
+@keyframes toBottom {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.c-hamburger__menu.close {
+  animation: toTop 1s forwards ease;
+}
+
+@keyframes toTop {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
 }
 
 .c-hamburger__menu__btn {
-  // background: #464646;
+  width: 60px;
+  height: 64px;
+  @include topBottom;
+  right: 0;
+  z-index: 610;
 
   span {
     display: inline-block;
@@ -75,8 +87,8 @@
 
 .c-hamburger__menu__btn.show {
   .c-hamburger__menu__btn--top {
-    @include transition;
     transform: translateY(3px) rotate(45deg);
+    @include transition;
   }
 
   .c-hamburger__menu__btn--middle {
@@ -84,48 +96,7 @@
   }
 
   .c-hamburger__menu__btn--bottom {
-    @include transition;
     transform: translateY(-12px) rotate(-45deg);
-  }
-}
-
-// top down
-.c-hamburger__menu__btn {
-  width: 60px;
-  height: 64px;
-  @include topBottom;
-  right: 0;
-  z-index: 610;
-}
-
-.c-hamburger__menu.close {
-  top: -100%;
-  animation: toTop .5s;
-}
-
-.c-hamburger__menu.show {
-  top: 0;
-  background: rgba(0, 0, 0, 0.8);
-  animation: toBottom .5s;
-}
-
-@keyframes toBottom {
-  0% {
-    top: -100%;
-  }
-
-  100% {
-    top: 0;
-  }
-}
-
-@keyframes toTop {
-  0% {
-    top: 0;
-  }
-
-  100% {
-    top: -100%;
-    opacity: 0;
+    @include transition;
   }
 }

@@ -144,27 +144,94 @@ footer {
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 501;
   right: 0;
+  z-index: 501;
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .c-hamburger__menu:hover {
   cursor: pointer;
 }
 
-.c-hamburger__menu__btn {
-  padding: 1rem 1.5rem;
-  position: absolute;
-  top: 15px;
-  right: 200px;
-  z-index: 502;
+.c-hamburger__menu.show {
+  opacity: 1;
+  top: 0;
+  -webkit-animation: toBottom .7s forwards ease;
+          animation: toBottom .7s forwards ease;
 }
 
-.c-hamburger__menu.show {
-  top: 0;
+@-webkit-keyframes toBottom {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes toBottom {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.c-hamburger__menu.close {
+  -webkit-animation: toTop 1s forwards ease;
+          animation: toTop 1s forwards ease;
+}
+
+@-webkit-keyframes toTop {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes toTop {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.c-hamburger__menu__btn {
+  width: 60px;
+  height: 64px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 0;
-  opacity: 1;
-  visibility: visible;
+  z-index: 610;
 }
 
 .c-hamburger__menu__btn span {
@@ -202,12 +269,12 @@ footer {
 }
 
 .c-hamburger__menu__btn.show .c-hamburger__menu__btn--top {
+  -webkit-transform: translateY(3px) rotate(45deg);
+          transform: translateY(3px) rotate(45deg);
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
-  -webkit-transform: translateY(3px) rotate(45deg);
-          transform: translateY(3px) rotate(45deg);
 }
 
 .c-hamburger__menu__btn.show .c-hamburger__menu__btn--middle {
@@ -215,74 +282,12 @@ footer {
 }
 
 .c-hamburger__menu__btn.show .c-hamburger__menu__btn--bottom {
+  -webkit-transform: translateY(-12px) rotate(-45deg);
+          transform: translateY(-12px) rotate(-45deg);
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
-  -webkit-transform: translateY(-12px) rotate(-45deg);
-          transform: translateY(-12px) rotate(-45deg);
-}
-
-.c-hamburger__menu__btn {
-  width: 60px;
-  height: 64px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 0;
-  z-index: 610;
-}
-
-.c-hamburger__menu.close {
-  top: -100%;
-  -webkit-animation: toTop .5s;
-          animation: toTop .5s;
-}
-
-.c-hamburger__menu.show {
-  top: 0;
-  background: rgba(0, 0, 0, 0.8);
-  -webkit-animation: toBottom .5s;
-          animation: toBottom .5s;
-}
-
-@-webkit-keyframes toBottom {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 0;
-  }
-}
-
-@keyframes toBottom {
-  0% {
-    top: -100%;
-  }
-  100% {
-    top: 0;
-  }
-}
-
-@-webkit-keyframes toTop {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: -100%;
-    opacity: 0;
-  }
-}
-
-@keyframes toTop {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: -100%;
-    opacity: 0;
-  }
 }
 
 .c-card__flex {
@@ -453,7 +458,7 @@ button:hover {
 
 .p-nav__ul__item {
   background: #fff;
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   margin-bottom: 3rem;
 }
 
@@ -576,7 +581,7 @@ button:hover {
 }
 
 .p-work__card__03 {
-  margin-top: -300px;
+  margin-top: -31%;
 }
 
 @media screen and (max-width: 768px) {
